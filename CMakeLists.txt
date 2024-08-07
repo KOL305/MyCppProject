@@ -41,4 +41,4 @@ add_executable(MyCppProject src/main.cpp)
 
 # Link libraries
 #target_link_libraries(MyCppProject PRIVATE glpk gmp mpfr cplex2211 ilocplex concert)
-target_link_libraries(MyCppProject PRIVATE glpk gmp mpfr)
+target_link_libraries(MyCppProject PRIVATE glpk gmp gmpxx mpfr)

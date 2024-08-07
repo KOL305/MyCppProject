@@ -24,12 +24,12 @@
 4. Run the following in powershell to set up: 
     - cmake -B build -S .
     - cd build
+    - cmake -DCMAKE_TOOLCHAIN_FILE=C:/Development/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+        - NOTE: THIS PATH WILL CHANGE DEPENDING ON VCPKG INSTALLATION
 
 # RUNNING CODE
 1. Ensure that the code that you want to run is in main.cpp
 2. Every time you want to rerun the code run the following:
-    - cmake -DCMAKE_TOOLCHAIN_FILE=C:/Development/vcpkg/scripts/buildsystems/vcpkg.cmake ..
-        - NOTE: THIS PATH WILL CHANGE DEPENDING ON VCPKG INSTALLATION
     - cmake --build .
     - DEBUG/MyCppProject.exe
 
